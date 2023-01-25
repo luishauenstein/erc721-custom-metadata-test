@@ -1,22 +1,26 @@
 {
-  "name": "Doge Test Data",
+  "name": "Mutable NFT",
   "image": "https://www.exodus.com/img/news/content/2022/11/flat-550x550-075-f.u1.jpg",
   "attributes": [
     {
-      "trait_type": "Efficiency",
+      "trait_type": "Coolness",
       "value": "9001"
     },
     {
-      "trait_type": "Color 1",
-      "value": "Black"
+      "trait_type": "Color",
+      "value": "Cream"
     },
     {
-      "trait_type": "Color 2",
-      "value": "Red"
+      "trait_type": "Power",
+      "value": "10 (better than 9)"
     },
     {
-      "trait_type": "Color 3",
-      "value": "Yellow"
+      "trait_type": "Favorite Coin",
+      "value": "$DOGE"
+    },
+    {
+      "trait_type": "Taste",
+      "value": "Bread"
     }
   ]
 }
