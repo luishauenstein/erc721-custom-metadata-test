@@ -16,12 +16,12 @@ contract MyScript is Script {
         string memory name = "Luis' Mutable NFTs";
         string memory symbol = "MUTALUIS";
         string memory baseURI = "https://nft.luish.xyz/";
-        address owner = 0xA7695a6Fb16B0d20d7aA4Eb6615ED86f33c3e01a;
+        //address owner = 0xA7695a6Fb16B0d20d7aA4Eb6615ED86f33c3e01a;
         
         vm.startBroadcast(deployerPrivateKey);
         
         MutableNFT nft = new MutableNFT(name, symbol, baseURI);
-        nft.transferOwnership(owner);
+        //nft.transferOwnership(owner);
         
         vm.stopBroadcast();
     }

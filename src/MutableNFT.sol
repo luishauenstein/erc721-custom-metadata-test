@@ -35,9 +35,8 @@ contract MutableNFT is Ownable, ERC721 {
         : "";
     }
 
-    function setBaseURI (string memory newBaseURI_) public onlyOwner returns (string memory){
+    function setBaseURI (string memory newBaseURI_) public onlyOwner {
         baseURI = newBaseURI_;
-        return baseURI;
     }
 
     //
