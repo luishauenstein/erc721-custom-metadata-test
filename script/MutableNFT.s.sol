@@ -7,7 +7,6 @@ import "../src/MutableNFT.sol";
 contract MyScript is Script {
 
     function run() external {
-        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
 
         //
         // TOKEN METADATA
@@ -16,9 +15,9 @@ contract MyScript is Script {
         string memory name = "Luis' Mutable NFTs";
         string memory symbol = "MUTALUIS";
         string memory baseURI = "https://nft.luish.xyz/";
-        //address owner = 0xA7695a6Fb16B0d20d7aA4Eb6615ED86f33c3e01a;
+        address owner = 0xA7695a6Fb16B0d20d7aA4Eb6615ED86f33c3e01a;
         
-        vm.startBroadcast(deployerPrivateKey);
+        vm.startBroadcast(owner);
         MutableNFT nft = new MutableNFT(name, symbol, baseURI);  
         vm.stopBroadcast();
     }
