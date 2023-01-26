@@ -19,11 +19,7 @@ contract MyScript is Script {
         //address owner = 0xA7695a6Fb16B0d20d7aA4Eb6615ED86f33c3e01a;
         
         vm.startBroadcast(deployerPrivateKey);
-        
-        MutableNFT nft = new MutableNFT(name, symbol, baseURI);
-        nft.mintTo(0xA7695a6Fb16B0d20d7aA4Eb6615ED86f33c3e01a);
-        //nft.transferOwnership(owner);
-        
+        MutableNFT nft = new MutableNFT(name, symbol, baseURI);  
         vm.stopBroadcast();
     }
 }
