@@ -66,4 +66,11 @@ contract MutableNFTTest is Test {
         nft.setBaseURI("https://abc.xyz/");
         assertEq(nft.tokenURI(1),"https://abc.xyz/1.json");
     }
+
+    function testTotalSupply() public {
+        nft.mintTo(address(1));
+        nft.mintTo(address(2));
+        nft.mintTo(address(3));
+        assertEq(nft.totalSupply(), 3);
+    }
 }

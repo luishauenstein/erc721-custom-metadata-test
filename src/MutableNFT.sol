@@ -40,12 +40,16 @@ contract MutableNFT is Ownable, ERC721 {
     }
 
     //
-    // MINT
+    // MINT & SUPPLY
     //
 
     function mintTo(address recipient) public onlyOwner returns (uint256) {
         uint256 newTokenId = ++currentTokenId;
         _safeMint(recipient, newTokenId);
         return newTokenId;
+    }
+
+    function totalSupply() public view returns (uint256) {
+        return currentTokenId;
     }
 }
