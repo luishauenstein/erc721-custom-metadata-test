@@ -1,22 +1,22 @@
 {
   "name": "Mutable NFT",
-  "image": "https://nft.luish.xyz/1.png",
+  "image": "https://nft.luish.xyz/2.jpg",
   "attributes": [
     {
       "trait_type": "Coolness",
-      "value": "21"
+      "value": "10"
     },
     {
       "trait_type": "Color",
-      "value": "lol"
+      "value": "Brown"
     },
     {
       "trait_type": "Power",
-      "value": "21"
+      "value": "5"
     },
     {
       "trait_type": "Favorite Coin",
-      "value": "$MUTALUIS"
+      "value": "$CAPY"
     }
   ]
 }

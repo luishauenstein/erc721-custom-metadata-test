@@ -9,5 +9,5 @@ optimizer_runs = 20_000
 
 [etherscan]
 goerli = { key = "{$ETHERSCAN_API_KEY}" }
-arbitrum-goerli = { key = "${ARBITRUM_ETHERSCAN_API_KEY}" }
-arbitrum = { key = "${ARBITRUM_ETHERSCAN_API_KEY}" }
+arbitrum-goerli = { key = "{$ARBITRUM_ETHERSCAN_API_KEY}", url = "https://api-goerli.arbiscan.io/api" }
+arbitrum = { key = "{$ARBITRUM_ETHERSCAN_API_KEY}", url="https://api.arbiscan.io/api" }
